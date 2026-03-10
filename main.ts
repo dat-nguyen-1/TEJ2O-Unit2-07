@@ -2,7 +2,7 @@
  *
  * Created by: Dat Nguyen
  * Created on: Mar 2026
- * This program will incease cookies by 1 when A is pressed and set it to 0 when B is pressed.
+ * This program will increase the number displayed when button A is pressed.
 */
 
 // Initialize variable cookies.
