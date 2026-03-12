@@ -5,21 +5,28 @@
  * This program will increase the number displayed when button A is pressed.
 */
 
-// Initialize variable cookies.
+// Initialize variables
 let cookies: number = 0
 
-// Button A pressed.
+// Initialize display
+basic.showIcon(IconNames.Happy)
+
+// Handle button A press
 input.onButtonPressed(Button.A, function() {
-    // Increase cookies by 1 and display.
+    // Increase cookies by 1
     cookies += 1
+
+    // Display cookies
     basic.clearScreen()
     basic.showNumber(cookies)
 })
 
-// Button B pressed.
+// Handle button B press
 input.onButtonPressed(Button.B, function() {
-    // Assign cookies to 0 and display.
+    // Reset cookies to 0.
     cookies = 0
+
+    // Display cookies
     basic.clearScreen()
     basic.showNumber(cookies)
 })
