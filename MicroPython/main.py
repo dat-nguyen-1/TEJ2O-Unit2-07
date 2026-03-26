@@ -6,17 +6,18 @@ This module will increase the number displayed when button A is pressed.
 
 from microbit import *
 
-# Initialize variables.
+# initialize variables
 cookies = 0
 
-# Main loop.
+# main loop
 while True:
-    # Handle the rising edge of button inputs.
+    # handle button inputs
     if button_a.was_pressed():
-        # Increments cookies by 1 and display.
+        # increase cookies by 1
         cookies += 1
-        display.scroll(str(cookies), delay=50)
     elif button_b.was_pressed():
-        # Reset cookies to 0 and display.
+        # reset cookies to 0
         cookies = 0
-        display.scroll(str(cookies), delay=50)
+
+    # display cookies
+    display.scroll(str(cookies), delay=50)
