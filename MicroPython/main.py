@@ -19,8 +19,8 @@ while True:
     if button_a.was_pressed():
         # increase cookies by 1 and display cookies
         cookies += 1
-        display.scroll(str(cookies))
+        display.show(str(cookies))
     elif button_b.was_pressed():
         # reset cookies to 0 and display cookies
         cookies = 0
-        display.scroll(str(cookies))
+        display.show(str(cookies))
