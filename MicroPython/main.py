@@ -9,15 +9,18 @@ from microbit import *
 # initialize variables
 cookies = 0
 
+# initialize display
+display.clear()
+display.show(Image.HAPPY)
+
 # main loop
 while True:
     # handle button inputs
     if button_a.was_pressed():
-        # increase cookies by 1
+        # increase cookies by 1 and display cookies
         cookies += 1
+        display.scroll(str(cookies))
     elif button_b.was_pressed():
-        # reset cookies to 0
+        # reset cookies to 0 and display cookies
         cookies = 0
-
-    # display cookies
-    display.scroll(str(cookies), delay=50)
+        display.scroll(str(cookies))
